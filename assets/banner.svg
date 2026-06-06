@@ -40,13 +40,13 @@
     <text x="326" y="200" font-size="27" font-weight="500" fill="#9FB6D6">Diagnose &amp; repair Bluetooth that won't stay on after a One UI update.</text>
 
     <!-- feature chips -->
-    <g font-size="20" font-weight="600">
-      <rect x="326" y="232" width="232" height="40" rx="20" fill="#13294F" stroke="#27508F" stroke-width="1.5"/>
-      <text x="350" y="258" fill="#BFE0FF">adb · non-destructive first</text>
-      <rect x="574" y="232" width="262" height="40" rx="20" fill="#13294F" stroke="#27508F" stroke-width="1.5"/>
-      <text x="598" y="258" fill="#BFE0FF">software vs. dead-radio</text>
-      <rect x="852" y="232" width="236" height="40" rx="20" fill="#13294F" stroke="#27508F" stroke-width="1.5"/>
-      <text x="876" y="258" fill="#BFE0FF">ARB-safe reflash path</text>
+    <g font-size="19" font-weight="600" fill="#BFE0FF" text-anchor="middle">
+      <rect x="324" y="232" width="300" height="40" rx="20" fill="#13294F" stroke="#27508F" stroke-width="1.5"/>
+      <text x="474" y="258">adb · non-destructive</text>
+      <rect x="644" y="232" width="324" height="40" rx="20" fill="#13294F" stroke="#27508F" stroke-width="1.5"/>
+      <text x="806" y="258">software vs. dead-radio</text>
+      <rect x="988" y="232" width="240" height="40" rx="20" fill="#13294F" stroke="#27508F" stroke-width="1.5"/>
+      <text x="1108" y="258">ARB-safe reflash</text>
     </g>
   </g>
 </svg>

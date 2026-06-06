@@ -86,7 +86,8 @@ Point the agent at this repo and tell it:
 
 ### ▶ Manually
 ```bash
-git clone <your-fork-url> && cd <repo>
+git clone https://github.com/fjimenez77/samsung-galaxy-bluetooth-rescue.git
+cd samsung-galaxy-bluetooth-rescue
 chmod +x scripts/*.sh          # first time only
 
 ./scripts/00_setup_mac.sh      # verify/install adb

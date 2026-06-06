@@ -1,0 +1,18 @@
+Samsung Z Fold Bluetooth Diagnostic & Rescue
+Copyright 2026 the project contributors
+
+Created and maintained by contributors to DevForgeAtlas-Org
+(https://github.com/DevForgeAtlas-Org).
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This project is an independent, community diagnostic toolkit. It is NOT
+affiliated with, endorsed by, or supported by Samsung Electronics, Google,
+or Qualcomm. "Samsung", "Galaxy", and "Galaxy Z Fold" are trademarks of
+Samsung Electronics; "Android" is a trademark of Google LLC; "Snapdragon"
+is a trademark of Qualcomm. They are used here only for accurate description
+and interoperability.
+
+The toolkit reads device state over adb and never flashes firmware itself.
+Firmware reinstall/rollback is an external, manual step performed with
+third-party tools (Odin / Heimdall / Thor) entirely at the user's own risk.

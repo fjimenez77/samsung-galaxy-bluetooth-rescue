@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Z Fold Bluetooth Rescue logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2BA6FF"/>
+      <stop offset="1" stop-color="#0B53D0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- tile -->
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="url(#bg)"/>
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="url(#glow)"/>
+
+  <!-- foldable hinge crease -->
+  <rect x="123" y="40" width="10" height="176" rx="5" fill="#ffffff" opacity="0.12"/>
+
+  <!-- Bluetooth glyph (Material path), centered, white -->
+  <g transform="translate(74,74) scale(4.5)" fill="#ffffff">
+    <path d="M17.71 7.71L12 2h-1v7.59L6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 11 14.41V22h1l5.71-5.71-4.3-4.29 4.3-4.29zM13 5.83l1.88 1.88L13 9.59V5.83zm1.88 10.46L13 18.17v-3.76l1.88 1.88z"/>
+  </g>
+
+  <!-- diagnostic pulse -->
+  <polyline points="44,210 86,210 100,188 116,224 132,200 150,210 212,210"
+            fill="none" stroke="#5BF0CE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+</svg>

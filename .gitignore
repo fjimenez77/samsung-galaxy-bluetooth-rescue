@@ -1,0 +1,18 @@
+# --- Real device logs are PRIVATE (contain serial, BT MAC, paired-device names) ---
+# Everything users capture lands in logs/ and must never be published.
+logs/*
+!logs/.gitkeep
+
+# Downloaded firmware (huge, and device/region-specific)
+fw/
+*.tar.md5
+*.enc4
+*.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/

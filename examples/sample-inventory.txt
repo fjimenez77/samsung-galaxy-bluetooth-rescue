@@ -1,0 +1,28 @@
+=== Z Fold 5 inventory (REDACTED EXAMPLE) ===
+
+--- Identity ---
+Model:            SM-F946U1
+Device:           q5q
+Manufacturer:     samsung
+
+--- Software / firmware ---
+Android version:  16
+One UI / inc:     F946U1UES8GZE8
+Build PDA:        F946U1UES8GZE8
+Build fingerprint:samsung/q5quew/q5q:16/BP4A.251205.006/F946U1UES8GZE8:user/release-keys
+Security patch:   2026-05-05
+
+--- Bootloader / rollback-relevant ---
+ro.bootloader:    F946U1UES8GZE8
+ro.boot.bootloader:F946U1UES8GZE8
+Bootloader index: 8        (the digit before the trailing 4-char block: F946U1UES[8]GZE8)
+
+--- Region / CSC (needed to find matching firmware) ---
+Sales code (CSC): ATT
+CSC version:      F946U1OYM8GZE8
+
+--- Bluetooth state ---
+BT enabled (1=on):1
+BT address:       XX:XX:XX:XX:XX:XX    (redacted; on a healthy device this is the real MAC,
+                                        here it was a *cached* value while the live adapter
+                                        reported "Unavailable" — see the dumpsys example)

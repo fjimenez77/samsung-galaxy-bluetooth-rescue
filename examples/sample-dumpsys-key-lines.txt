@@ -1,0 +1,53 @@
+=== Key lines from a firmware/HAL Bluetooth-init failure (REDACTED EXAMPLE) ===
+Device: SM-F946U1 / One UI 8.5 (F946U1UES8GZE8). MACs redacted as XX.
+
+----------------------------------------------------------------------
+adb shell dumpsys bluetooth_manager   (head)
+----------------------------------------------------------------------
+Bluetooth Status
+  enabled: false
+  state: BLE_TURNING_ON            <-- never reaches ON
+  address: XX:XX:XX:XX:XX:XX
+  name: Galaxy Z Fold5
+  time since enabled: 0.23738s
+
+Enable log:
+  Package [BluetoothSystemServer] requested to [Disable].  Reason is CRASH
+  Package [com.samsung.android.beaconmanager] requested to [EnableBle].  Reason is APPLICATION_REQUEST
+  Package [BluetoothSystemServer] requested to [Disable].  Reason is CRASH
+  Package [com.samsung.android.beaconmanager] requested to [EnableBle].  Reason is APPLICATION_REQUEST
+  ... (repeats roughly every 0.7s) ...
+
+Bluetooth crashed 6439 times       <-- crash loop: stack tries to enable, dies, gets re-enabled
+
+----------------------------------------------------------------------
+adb logcat   (the actual failure point — vendor HAL not reachable)
+----------------------------------------------------------------------
+bt_stack_manager: event_init_stack: is initializing the stack
+bluetooth: hci_backend_aidl.cc CreateAidl: Bluetooth AIDL HAL service not declared
+bluetooth: hci_hal_impl_android.cc HciHalImpl: AIDL backend not available, falling back to HIDL
+bluetooth: hci_backend_hidl.cc HidlHci: Trying to find a HIDL interface
+bluetooth: hci_backend_hidl.cc operator(): Unable to get a Bluetooth service after 500ms,
+                                            start the HAL before starting Bluetooth
+ActivityManager: Process com.android.bluetooth (pid …) has died: psvc PER
+BluetoothSystemServer: ActiveLogs: Package [BluetoothSystemServer] requested to [Disable]. Reason is CRASH
+
+----------------------------------------------------------------------
+adb shell getprop   (the smoking gun — chip-level init failure)
+----------------------------------------------------------------------
+[sys.init.updatable_crashing_process_name]: [vendor.bluetooth-1-1-qti]   <- vendor HAL is the crasher
+[vendor.bluetooth_init_fail]: [338]                                      <- nonzero & CLIMBING each attempt
+[persist.vendor.qcom.bluetooth.soc]: [hastings]                         <- Qualcomm WCN combo chip
+[vendor.bluetooth_fw_ver]: [BTFW.HSP_C.2.1.1.c1-00111-PATCHZ-1 | hpbtfw21.tlv]
+
+----------------------------------------------------------------------
+Cross-check: Wi-Fi on the SAME chip
+----------------------------------------------------------------------
+settings get global wifi_on  -> 1
+dumpsys wifi                 -> "Wi-Fi is enabled", wlan0 present
+=> Chip is powered; the *Bluetooth* firmware/NV path specifically is failing.
+
+INTERPRETATION: app data is healthy (StorageModule started, DB within limit), so
+`pm clear com.android.bluetooth` does NOT help. The fault is the vendor HAL/controller
+init. Fix path: same-version reflash (see ../notes/reflash-same-version.md). If a clean
+reflash still fails -> BT-core hardware/EFS fault -> service centre.

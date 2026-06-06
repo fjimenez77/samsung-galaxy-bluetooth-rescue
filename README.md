@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Samsung Z Fold — Bluetooth Diagnostic & Rescue" width="100%">
+  <img src="assets/banner.svg" alt="Samsung Galaxy — Bluetooth Diagnostic & Rescue" width="100%">
 </p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: Apache-2.0" src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"></a>
   <img alt="Platform: macOS / Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg">
   <img alt="Tool: adb" src="https://img.shields.io/badge/driver-adb-green.svg">
-  <img alt="Device: Galaxy Z Fold (SM-F9xx)" src="https://img.shields.io/badge/device-Galaxy%20Z%20Fold%20(SM--F9xx)-1f6feb.svg">
+  <img alt="Device: Samsung Galaxy (S · Note · A · Z)" src="https://img.shields.io/badge/device-Samsung%20Galaxy%20(S%20%C2%B7%20Note%20%C2%B7%20A%20%C2%B7%20Z)-1f6feb.svg">
 </p>
 
 # Samsung Galaxy — Bluetooth Diagnostic & Rescue
@@ -51,9 +51,10 @@ guided firmware reinstall**, or **hardware fault → service centre with evidenc
 
 ## Who this is for
 
-You have a Z Fold whose Bluetooth broke (often right after an OTA), you're comfortable
-running a few terminal commands, and you want to **know whether it's fixable before** you
-risk a firmware flash or pay for a repair.
+You have a **Samsung Galaxy** phone (Z Fold, S, Note, A, or another Galaxy model) whose
+Bluetooth broke — often right after an OTA — you're comfortable running a few terminal
+commands, and you want to **know whether it's fixable before** you risk a firmware flash or
+pay for a repair.
 
 You'll need: a **Mac or Linux** (or WSL) machine with `adb`, a **USB data cable**, and the
 phone with **USB debugging** enabled.
@@ -177,7 +178,7 @@ scripts/   00 setup · 01 inventory · 02 logcat · 03 repair(--soft/--hard) · 
 notes/     reflash-same-version.md (recommended) · rollback-guide.md (last resort)
 examples/  redacted real captures showing the firmware/HAL-init-failure signature
 logs/      YOUR captures land here — gitignored, never published (they hold serial + BT MAC)
-CLAUDE.md  operating context, guardrails, and decision tree (also the Claude Code agent plan)
+CLAUDE.md  operating context, guardrails, and decision tree (agent plan; mirrored by AGENTS.md)
 ```
 
 ---

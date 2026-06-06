@@ -56,7 +56,9 @@ Unzip the result → you get **BL_*, AP_*, CP_*, CSC_*** and **HOME_CSC_*** `.ta
      same-version flash, HOME_CSC should not force a wipe — best first attempt.
    - If BT is still dead after that, redo the flash with the **plain `CSC`** file (this **wipes**
      the device) for a fully clean partition set.
-3. **Options:** leave **Re-Partition unchecked**.
+3. **Options tab:** **Auto Reboot ON** and **F. Reset Time ON** (both are defaults — F. Reset
+   Time only resets Odin's flash-timer, it does NOT wipe data), **Re-Partition OFF**, and
+   **Nand Erase All OFF** (never check Nand Erase). Leave everything else off.
 4. Press **Start**. Do **not** touch the cable until it shows **PASS** and the phone reboots.
 
 Heimdall (Mac) equivalent: unzip the tar.md5 files, `heimdall print-pit` to get partition names,

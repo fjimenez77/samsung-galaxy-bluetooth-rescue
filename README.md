@@ -197,11 +197,20 @@ Issues and PRs welcome — especially confirmed `init_fail` codes, build/CSC com
 whether a same-version reflash resolved your case (it helps others triage). See
 [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-## Credits
+## Contributors
+
+<p align="center">
+  <a href="https://github.com/fjimenez77"><img src="https://github.com/fjimenez77.png" width="72" height="72" alt="@fjimenez77"><br><sub><b>fjimenez77</b></sub></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/vivianfongdesigns-glitch"><img src="https://github.com/vivianfongdesigns-glitch.png" width="72" height="72" alt="@vivianfongdesigns-glitch"><br><sub><b>vivianfongdesigns-glitch</b></sub></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DevForgeAtlas-Org"><img src="https://github.com/DevForgeAtlas-Org.png" width="72" height="72" alt="DevForgeAtlas-Org"><br><sub><b>DevForgeAtlas-Org</b></sub></a>
+</p>
 
 Created and maintained by contributors to
 **[DevForgeAtlas-Org](https://github.com/DevForgeAtlas-Org)**. Community data points and PRs
-are what make the decision tree better — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+are what make the decision tree better — see [`CONTRIBUTING.md`](CONTRIBUTING.md) and the full
+[`CONTRIBUTORS.md`](CONTRIBUTORS.md).
 
 ## License
 

@@ -199,13 +199,19 @@ whether a same-version reflash resolved your case (it helps others triage). See
 
 ## Contributors
 
-<p align="center">
-  <a href="https://github.com/fjimenez77"><img src="https://github.com/fjimenez77.png" width="72" height="72" alt="@fjimenez77"><br><sub><b>fjimenez77</b></sub></a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/vivianfongdesigns-glitch"><img src="https://github.com/vivianfongdesigns-glitch.png" width="72" height="72" alt="@vivianfongdesigns-glitch"><br><sub><b>vivianfongdesigns-glitch</b></sub></a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DevForgeAtlas-Org"><img src="https://github.com/DevForgeAtlas-Org.png" width="72" height="72" alt="DevForgeAtlas-Org"><br><sub><b>DevForgeAtlas-Org</b></sub></a>
-</p>
+<table align="center">
+  <tr>
+    <td align="center" width="180">
+      <a href="https://github.com/fjimenez77"><img src="https://github.com/fjimenez77.png" width="80" height="80" style="border-radius:50%" alt="fjimenez77"><br><sub><b>fjimenez77</b></sub></a>
+    </td>
+    <td align="center" width="180">
+      <a href="https://github.com/vivianfongdesigns-glitch"><img src="https://github.com/vivianfongdesigns-glitch.png" width="80" height="80" style="border-radius:50%" alt="vivianfongdesigns-glitch"><br><sub><b>vivianfongdesigns-glitch</b></sub></a>
+    </td>
+    <td align="center" width="180">
+      <a href="https://github.com/DevForgeAtlas-Org"><img src="https://github.com/DevForgeAtlas-Org.png" width="80" height="80" style="border-radius:50%" alt="DevForgeAtlas-Org"><br><sub><b>DevForgeAtlas-Org</b></sub></a>
+    </td>
+  </tr>
+</table>
 
 Created and maintained by contributors to
 **[DevForgeAtlas-Org](https://github.com/DevForgeAtlas-Org)**. Community data points and PRs
